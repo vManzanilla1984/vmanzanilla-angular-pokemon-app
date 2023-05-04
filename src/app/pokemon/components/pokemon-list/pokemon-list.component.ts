@@ -1,5 +1,4 @@
 import { PokemonList } from './../../interfaces/pokemonList.interface';
-import { Pokemon } from './../../interfaces/pokemon.interface';
 import { Component, Input } from '@angular/core';
 
 @Component({

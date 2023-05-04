@@ -28,7 +28,23 @@ export class PokemonService {
 
   getAll(): Observable<PokemonList> {
 
-    return this.get<PokemonList>(`${this.url}/pokemon?limit=100&amp;offset=200`)
+    return this.get<PokemonList>(`${this.url}/pokemon?limit=150&amp;offset=200`)
+      .pipe(
+        tap(
+
+        ),
+        tap(
+          () => {
+
+          }
+        )
+      )
+
+  }
+
+  getPokemonByURL(url: string): Observable<Pokemon> {
+
+    return this.get<Pokemon>(`${url}`)
       .pipe(
         tap(
 

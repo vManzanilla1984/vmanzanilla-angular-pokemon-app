@@ -1,6 +1,6 @@
 <shared-card [info]="info">
   <div>
-    <img class="card__body--icon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png">
+    <img *ngIf="info" class="card__body--icon" src="{{info.image}}">
   </div>
 </shared-card>
 

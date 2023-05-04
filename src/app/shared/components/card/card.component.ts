@@ -1,4 +1,4 @@
-import { cardInfo } from './../../interfaces/card-info.interface';
+import { CardInfo } from './../../interfaces/card-info.interface';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -9,11 +9,6 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input()
-  public info: cardInfo = {
-    name: ''
-  }
-
-  @Input()
-  public isLoading: boolean = true;
+  public info: CardInfo | null = null;
 
 }

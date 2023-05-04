@@ -1,14 +1,14 @@
 <div class="card">
 
-  <shared-preloader-card *ngIf="isLoading"></shared-preloader-card>
+  <shared-preloader-card *ngIf="!info"></shared-preloader-card>
 
-  <div *ngIf="!isLoading" class="card__content">
+  <div *ngIf="info" class="card__content">
 
     <div class="card__header">
 
       <div class="card__header--group-left">
         <div class="card__header--title-left">
-          25
+          {{info.id}}
         </div>
         <div class="card__header--title-center">
           {{info.name}}
@@ -17,13 +17,13 @@
 
       <div class="card__header--group-right">
         <div class="card__header--stat-legend">
-          hp
+          {{info.topText}}
         </div >
         <div class="card__header--stat-value">
-          70
+          {{info.topValue}}
         </div>
         <div>
-          <img class="card__header--icon" src="assets/electric.svg">
+          <img *ngFor="let type of info.types" class="card__header--icon" alt="{{ type }}" title="{{ type }}" src="assets/pokemonTypes/{{type | lowercase}}.webp">
         </div>
       </div>
     </div>

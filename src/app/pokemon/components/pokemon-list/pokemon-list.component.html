@@ -1,13 +1,13 @@
 <div class="list-container">
-    <a href="{{pokemon.name}}" class="list-item" *ngFor="let pokemon of pokemonList.results">
-      <shared-card-front
-        [info]="{
-          name:pokemon.name
-        }"
+
+      <pokemon-card
+        [url]="pokemon.url"
+        class="list-item"
+        *ngFor="let pokemon of pokemonList.results"
       >
-        <shared-preloader-card></shared-preloader-card>
-    </shared-card-front>
-    </a>
+    </pokemon-card>
+
+
 </div>
 
 
