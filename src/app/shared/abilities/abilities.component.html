@@ -1,0 +1,8 @@
+<div class="abilities__container">
+  <span class="abilities__desc">
+    Abilities:
+  </span>
+  <span *ngFor="let ability of abilities; ; let i = index" class="abilities__value">
+    {{ability}}<span *ngIf="i < abilities.length - 1">,</span>
+  </span>
+</div>

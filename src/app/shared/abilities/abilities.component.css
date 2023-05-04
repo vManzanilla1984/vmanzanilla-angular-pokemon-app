@@ -1,0 +1,13 @@
+.abilities__container {
+  font-size: 0.7em;
+  justify-content: start;
+}
+
+.abilities__desc {
+  font-weight: bold;
+  color: #555;
+}
+
+.abilities__value {
+  font-style: italic;
+}

@@ -1,0 +1,35 @@
+<shared-card>
+  <div class="card__body--container">
+    <div class="card__body--icon-container">
+      <img class="card__body--icon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png">
+    </div>
+    <div class="card__body--info-container">
+      <div class="card__body-container card__body--stats-container">
+        <shared-stat
+          description="hp"
+          value="35"
+        ></shared-stat>
+        <shared-stat
+          description="attack"
+          value="55"
+        ></shared-stat>
+        <shared-stat
+          description="defense"
+          value="40"
+        ></shared-stat>
+        <shared-stat
+          description="speed"
+          value="90"
+        ></shared-stat>
+      </div>
+      <div class="card__body-container card__body--type-container">
+          <shared-type></shared-type>
+      </div>
+      <div class="card__body-container card__body--abilities-container">
+          <shared-abilities [abilities]="['overgrow','chlorophyll']"></shared-abilities>
+      </div>
+    </div>
+  </div>
+
+</shared-card>
+

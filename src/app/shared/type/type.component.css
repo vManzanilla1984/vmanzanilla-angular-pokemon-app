@@ -1,0 +1,15 @@
+.type__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.type__icon {
+  width: 32px;
+}
+
+.type__desc {
+  text-transform: uppercase;
+  font-weight: bold;
+}
