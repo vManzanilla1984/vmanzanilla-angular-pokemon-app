@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { StatComponent } from './stat/stat.component';
 import { TypeComponent } from './type/type.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
+import { PageDescriptionComponent } from './page-description/page-description.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +15,16 @@ import { AbilitiesComponent } from './abilities/abilities.component';
     CardComponent,
     StatComponent,
     TypeComponent,
-    AbilitiesComponent
+    AbilitiesComponent,
+    PageDescriptionComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     CardFrontComponent,
-    CardBackComponent
+    CardBackComponent,
+    PageDescriptionComponent
   ]
 })
 export class SharedModule { }

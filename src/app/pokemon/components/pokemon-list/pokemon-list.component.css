@@ -1,0 +1,13 @@
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  display: block;
+}

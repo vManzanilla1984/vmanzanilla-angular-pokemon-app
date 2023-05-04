@@ -1,0 +1,19 @@
+.page__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title--icon {
+  width: 280px;
+}
+
+.page__title--text {
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #0074d9;
+  position: relative;
+  top: -15px;
+}
