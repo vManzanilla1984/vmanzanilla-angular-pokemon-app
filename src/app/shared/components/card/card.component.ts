@@ -13,4 +13,7 @@ export class CardComponent {
     name: ''
   }
 
+  @Input()
+  public isLoading: boolean = true;
+
 }

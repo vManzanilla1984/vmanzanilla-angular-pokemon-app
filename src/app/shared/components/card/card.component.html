@@ -1,5 +1,8 @@
 <div class="card">
-  <div class="card__content">
+
+  <shared-preloader-card *ngIf="isLoading"></shared-preloader-card>
+
+  <div *ngIf="!isLoading" class="card__content">
 
     <div class="card__header">
 

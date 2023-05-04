@@ -26,12 +26,10 @@ export class PokemonListPageComponent {
 
   getPokemonList(): void {
 
-    console.log('-----getPokemonList')
     this.isLoading = true
 
     this.pokemonService.getAll().subscribe(
       resp => {
-        console.log('-----pokemons:', resp)
         this.pokemonList = resp
         this.isLoading = false
       }

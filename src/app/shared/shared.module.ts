@@ -7,6 +7,8 @@ import { StatComponent } from './components/stat/stat.component';
 import { TypeComponent } from './components/type/type.component';
 import { AbilitiesComponent } from './components/abilities/abilities.component';
 import { PageDescriptionComponent } from './components/page-description/page-description.component';
+import { PreloaderTotalPageComponent } from './components/preloader-total-page/preloader-total-page.component';
+import { PreloaderCardComponent } from './components/preloader-card/preloader-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PageDescriptionComponent } from './components/page-description/page-des
     StatComponent,
     TypeComponent,
     AbilitiesComponent,
-    PageDescriptionComponent
+    PageDescriptionComponent,
+    PreloaderTotalPageComponent,
+    PreloaderCardComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +28,9 @@ import { PageDescriptionComponent } from './components/page-description/page-des
   exports: [
     CardFrontComponent,
     CardBackComponent,
-    PageDescriptionComponent
+    PageDescriptionComponent,
+    PreloaderTotalPageComponent,
+    PreloaderCardComponent
   ]
 })
 export class SharedModule { }
