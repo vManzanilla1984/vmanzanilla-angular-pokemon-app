@@ -1,3 +1,7 @@
+:root {
+  --mobile-breakpoint: 800px;
+}
+
 /* System Fonts as used by GitHub */
 body,
 h1 {
@@ -7,4 +11,10 @@ h1 {
 
 body {
   margin-top: 200px;
+}
+
+@media (max-width: var(--mobile-breakpoint)) {
+  body {
+    margin-top: 125px;
+  }
 }

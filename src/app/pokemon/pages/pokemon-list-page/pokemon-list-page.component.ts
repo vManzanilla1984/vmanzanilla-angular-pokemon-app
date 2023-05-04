@@ -1,5 +1,4 @@
 import { PokemonList } from './../../interfaces/pokemonList.interface';
-import { Pokemon } from './../../interfaces/pokemon.interface';
 import { PokemonService } from './../../services/pokemon.service';
 import { Component } from '@angular/core';
 
