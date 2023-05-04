@@ -4,10 +4,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.page__title.small .page__title--icon {
+  width: 120px;
+  top: 0;
+  transition-duration: 0.5s;
+}
+
+.page__title.small .page__title--text {
+  margin-top: 3em;
+  font-size: 0.4em;
+  transition-duration: 0.5s;
 }
 
 .page__title--icon {
   width: 280px;
+  transition-duration: 0.5s;
 }
 
 .page__title--text {
@@ -16,4 +34,5 @@
   color: #0074d9;
   position: relative;
   top: -15px;
+  transition-duration: 0.5s;
 }
