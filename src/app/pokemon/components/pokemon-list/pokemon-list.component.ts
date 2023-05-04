@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { PokemonList } from './../../interfaces/pokemonList.interface';
+import { Pokemon } from './../../interfaces/pokemon.interface';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'pokemon-list',
@@ -7,6 +9,12 @@ import { Component } from '@angular/core';
 })
 export class PokemonListComponent {
 
-  public pokemons: string[] = ["", "", "", "", "", "", "", "", "", "", "", ""]
+  @Input()
+  public pokemonList: PokemonList = {
+    count: 0,
+    next: '',
+    previous: null,
+    results: []
+  }
 
 }

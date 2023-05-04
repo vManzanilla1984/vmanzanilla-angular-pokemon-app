@@ -1,5 +1,11 @@
 <div class="list-container">
-    <shared-card-front class="list-item" *ngFor="let pokemon of pokemons"></shared-card-front>
+    <a href="{{pokemon.name}}" class="list-item" *ngFor="let pokemon of pokemonList.results">
+      <shared-card-front
+        [info]="{
+          name:pokemon.name
+        }"
+      ></shared-card-front>
+    </a>
 </div>
 
 

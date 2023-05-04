@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { cardInfo } from './../../interfaces/card-info.interface';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'shared-card-front',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-front.component.css']
 })
 export class CardFrontComponent {
+
+  @Input()
+  public info: cardInfo = {
+    name: ''
+  }
 
 }

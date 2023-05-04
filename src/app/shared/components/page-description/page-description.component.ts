@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'shared-page-description',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./page-description.component.css']
 })
 export class PageDescriptionComponent {
+
+  @Input()
+  public title: string = ""
+
+  @Input()
+  public description: string = ""
 
 }
