@@ -1,8 +1,19 @@
-<shared-card-front [info]=" pokemonData | pokemonObject" >
-    <shared-preloader-card></shared-preloader-card>
-</shared-card-front>
+<div class="tp-wrapper">
 
-<shared-card-back [info]=" pokemonData | pokemonObject">
-  <shared-preloader-card></shared-preloader-card>
-</shared-card-back>
+      <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+
+            <shared-card-front [info]=" pokemonData | pokemonObject" class="tp-box__side tp-box__front">
+                <shared-preloader-card></shared-preloader-card>
+            </shared-card-front>
+
+            <shared-card-back [info]=" pokemonData | pokemonObject" class="tp-box__side tp-box__back">
+              <shared-preloader-card></shared-preloader-card>
+            </shared-card-back>
+
+      </div>
+
+
+</div>
+
+
 
