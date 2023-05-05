@@ -12,7 +12,6 @@ export class PokemonCardComponent implements OnInit {
   @Input()
   public url: string = ''
 
-  public isLoading: boolean = false;
   public pokemonData: Pokemon | null = null
 
   constructor(private pokemonService: PokemonService) {
@@ -31,11 +30,14 @@ export class PokemonCardComponent implements OnInit {
       return
     }
 
-    this.isLoading = true
-
     this.pokemonService.getPokemonByURL(this.url).subscribe(
       resp => {
-        this.pokemonData = resp
+
+        // just for showing the preloader
+        setTimeout(() => {
+          this.pokemonData = resp
+        }, 500);
+
       }
     );
 

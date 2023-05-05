@@ -1,17 +1,17 @@
 .card__body--icon-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
 }
 
 .card__body--icon {
+  padding: var(--padding);
   width: 95px;
-  padding: 12px 6px;
 }
 
 .card__body--info-container {
-  padding: 12px;
+  padding: var(--padding);
 }
 
 .card__body--stats-container {
@@ -20,10 +20,15 @@
 }
 
 .card__body-container {
-  padding: 12px 0;
   border-bottom: 1px solid #ccc;
+  padding: var(--padding) 0;
 }
 
 .card__body-container:last-child {
   border-bottom: none;
+}
+
+.card__body--type-container {
+  display: flex;
+  justify-content: center;
 }

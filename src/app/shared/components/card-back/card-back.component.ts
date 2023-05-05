@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { CardInfo } from './../../interfaces/card-info.interface';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'shared-card-back',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-back.component.css']
 })
 export class CardBackComponent {
+
+  @Input()
+  public info: CardInfo | null = null
 
 }

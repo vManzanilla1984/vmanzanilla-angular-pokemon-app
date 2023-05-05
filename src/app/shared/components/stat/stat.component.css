@@ -1,15 +1,15 @@
 .card__body--stat {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .card__body--stat-desc {
+  color: #555;
   font-size: 0.6em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #555;
 }
 
 .card__body--stat-value {

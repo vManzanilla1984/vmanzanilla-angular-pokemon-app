@@ -1,37 +1,37 @@
 .page__title {
-  padding: 1em;
-  width: -webkit-fill-available;
+  align-items: center;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 1em;
   position: fixed;
   top: 0;
-  background-color: #fff;
   transition-duration: 0.5s;
+  width: -webkit-fill-available;
   z-index: 2;
 }
 
 .page__title--icon {
-  width: 280px;
   transition-duration: 0.5s;
+  width: 280px;
 }
 .page__title.small .page__title--icon {
-  width: 120px;
   transition-duration: 0.5s;
+  width: 120px;
 }
 
 .page__title--text {
-  font-size: 1em;
-  text-transform: capitalize;
   color: #0074d9;
+  font-size: 1em;
   position: relative;
+  text-transform: capitalize;
   top: -15px;
   transition-duration: 0.5s;
 }
 .page__title.small .page__title--text {
-  margin-top: 3em;
   font-size: 0.4em;
+  margin-top: 3em;
   transition-duration: 0.5s;
 }
 
@@ -40,13 +40,13 @@
     width: 120px;
   }
   .page__title.small .page__title--icon {
-    width: 60px;
     transition-duration: 0.5s;
+    width: 60px;
   }
 
   .page__title--text {
-    margin-top: 2em;
     font-size: 0.6em;
+    margin-top: 2em;
   }
   .page__title.small .page__title--text {
     display: none;

@@ -30,7 +30,13 @@ export class PokemonListPageComponent {
     this.pokemonService.getAll().subscribe(
       resp => {
         this.pokemonList = resp
-        this.isLoading = false
+
+        // just for showing the preloader
+        setTimeout(() => {
+          this.isLoading = false
+        }, 500);
+
+
       }
     );
 

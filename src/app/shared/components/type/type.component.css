@@ -1,15 +1,16 @@
 .type__container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.type__icon {
+.type__icon img {
   width: 32px;
 }
 
 .type__desc {
-  text-transform: uppercase;
   font-weight: bold;
+  padding: 0 1em;
+  text-transform: uppercase;
 }

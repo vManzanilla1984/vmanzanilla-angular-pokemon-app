@@ -11,11 +11,16 @@ export class PokemonObjectPipe implements PipeTransform {
 
     if (!value) return value;
 
-    console.log('------value:', value)
-
     const cardInfo: CardInfo = {
+      abilities: value.abilities.map(
+        ability => ability.ability.name
+      ),
       id: value.id,
+      image: value.sprites.other?.['official-artwork'].front_default || '/assets',
       name: value.name,
+      stats: value.stats.filter(
+        item => item.stat.name !== 'special-attack' && item.stat.name !== 'special-defense'
+      ),
       topValue: value.stats.filter(
         (stat: Stat) => stat.stat.name === 'hp'
       )[0].base_stat,
@@ -25,7 +30,6 @@ export class PokemonObjectPipe implements PipeTransform {
       types: value.types.map(
         type => type.type.name
       ),
-      image: value.sprites.other?.['official-artwork'].front_default || '/assets'
     }
 
     return cardInfo;

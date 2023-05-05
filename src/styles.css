@@ -1,5 +1,8 @@
 :root {
   --mobile-breakpoint: 800px;
+  --padding: 12px;
+  --half-padding: 6px;
+  --background-color: #ddd;
 }
 
 /* System Fonts as used by GitHub */
