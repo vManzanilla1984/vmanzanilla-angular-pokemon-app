@@ -14,7 +14,11 @@
   text-decoration: none;
 }
 
-@media (max-width: var(--mobile-breakpoint)) {
+.list-item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
   .list-container {
     justify-content: center;
   }

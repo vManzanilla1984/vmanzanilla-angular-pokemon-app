@@ -16,7 +16,7 @@ body {
   margin-top: 200px;
 }
 
-@media (max-width: var(--mobile-breakpoint)) {
+@media (max-width: 800px) {
   body {
     margin-top: 125px;
   }
